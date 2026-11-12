@@ -5,9 +5,9 @@
 ## สถานะที่ตรงกับงานจริง
 
 - มีซอร์สแอป, Xcode project, shared scheme, ไอคอน, คำขอสิทธิ์ และ workflow สร้าง IPA
-- **ยังไม่ได้คอมไพล์ด้วย Xcode หรือทดสอบบน iPhone** เพราะเครื่องที่พัฒนาเป็น Windows และยังไม่ได้เชื่อม repository/บริการ macOS runner
+- **คอมไพล์ Release สำหรับ iPhone ด้วย Xcode บน GitHub Actions สำเร็จแล้ว** เมื่อ 12 พฤศจิกายน 2026 ตรวจโครงสร้าง IPA และ executable ARM64 แล้ว แต่ยังไม่ได้ทดสอบบน iPhone จริง
 - ไฟล์ ZIP ที่ส่งเป็นซอร์สโค้ด ไม่ใช่ IPA ที่ติดตั้งได้ทันที
-- Workflow จะสร้าง `LumaCamera-unsigned.ipa` หลัง build ผ่าน ต้องเซ็นด้วย AltStore ก่อนเปิดบน iPhone
+- ดาวน์โหลด `LUMA-Camera.ipa` จาก [GitHub Releases](https://github.com/KROTDEV05/luma-camera/releases) ได้ ต้องเซ็นด้วย AltStore ก่อนเปิดบน iPhone หรือสร้างเองด้วย workflow ซึ่งจะได้ `LumaCamera-unsigned.ipa`
 - ไม่ต้องส่ง Apple ID, รหัสผ่าน, certificate หรือรหัส 2FA ให้ผู้พัฒนาในแชต
 
 ## ฟังก์ชันในซอร์สเวอร์ชันนี้
