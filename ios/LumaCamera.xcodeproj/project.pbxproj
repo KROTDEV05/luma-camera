@@ -1,0 +1,96 @@
+// !$*UTF8*$!
+{archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000064 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LumaCameraApp.swift"; sourceTree = "<group>"; };
+0000000000000000000000C8 = {isa = PBXBuildFile; fileRef = 000000000000000000000064; };
+000000000000000000000065 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmEngine.swift"; sourceTree = "<group>"; };
+0000000000000000000000C9 = {isa = PBXBuildFile; fileRef = 000000000000000000000065; };
+000000000000000000000066 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraController.swift"; sourceTree = "<group>"; };
+0000000000000000000000CA = {isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+000000000000000000000067 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraScreen.swift"; sourceTree = "<group>"; };
+0000000000000000000000CB = {isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+000000000000000000000068 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Resources/looks.json"; sourceTree = "<group>"; };
+0000000000000000000000CC = {isa = PBXBuildFile; fileRef = 000000000000000000000068; };
+000000000000000000000069 = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resources/portrait.jpg"; sourceTree = "<group>"; };
+0000000000000000000000CD = {isa = PBXBuildFile; fileRef = 000000000000000000000069; };
+00000000000000000000006A = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resources/city.jpg"; sourceTree = "<group>"; };
+0000000000000000000000CE = {isa = PBXBuildFile; fileRef = 00000000000000000000006A; };
+00000000000000000000006B = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resources/mountain.jpg"; sourceTree = "<group>"; };
+0000000000000000000000CF = {isa = PBXBuildFile; fileRef = 00000000000000000000006B; };
+00000000000000000000006C = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+0000000000000000000000D0 = {isa = PBXBuildFile; fileRef = 00000000000000000000006C; };
+000000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = LumaCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+000000000000000000000003 = {isa = PBXGroup; children = (000000000000000000000005,
+000000000000000000000004,); sourceTree = "<group>"; };
+000000000000000000000005 = {isa = PBXGroup; path = LumaCamera; children = (000000000000000000000064,
+000000000000000000000065,
+000000000000000000000066,
+000000000000000000000067,
+000000000000000000000068,
+000000000000000000000069,
+00000000000000000000006A,
+00000000000000000000006B,
+00000000000000000000006C,); sourceTree = "<group>"; };
+000000000000000000000004 = {isa = PBXGroup; name = Products; children = (000000000000000000000006,); sourceTree = "<group>"; };
+000000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000C8,
+0000000000000000000000C9,
+0000000000000000000000CA,
+0000000000000000000000CB,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000CC,
+0000000000000000000000CD,
+0000000000000000000000CE,
+0000000000000000000000CF,
+0000000000000000000000D0,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000009 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000002 = {isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000000B; buildPhases = (000000000000000000000007,
+000000000000000000000009,
+000000000000000000000008,); buildRules = (); dependencies = (); name = LumaCamera; productName = LumaCamera; productReference = 000000000000000000000006; productType = "com.apple.product-type.application"; };
+000000000000000000000001 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600; TargetAttributes = {000000000000000000000002 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 00000000000000000000000A; compatibilityVersion = "Xcode 14.0"; developmentRegion = th; hasScannedForEncodings = 0; knownRegions = (th,en,Base); mainGroup = 000000000000000000000003; productRefGroup = 000000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000002,); };
+00000000000000000000012C = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+SDKROOT = iphoneos;
+SWIFT_VERSION = 5.0;
+CLANG_ENABLE_OBJC_ARC = YES;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug; };
+00000000000000000000012D = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+SDKROOT = iphoneos;
+SWIFT_VERSION = 5.0;
+CLANG_ENABLE_OBJC_ARC = YES;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release; };
+00000000000000000000000A = {isa = XCConfigurationList; buildConfigurations = (00000000000000000000012C,
+00000000000000000000012D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000190 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = LumaCamera/Info.plist;
+MARKETING_VERSION = 1.0.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.luma.filmcamera;
+PRODUCT_NAME = "$(TARGET_NAME)";
+TARGETED_DEVICE_FAMILY = 1;
+SWIFT_EMIT_LOC_STRINGS = YES;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+SUPPORTS_MACCATALYST = NO;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug; };
+000000000000000000000191 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = LumaCamera/Info.plist;
+MARKETING_VERSION = 1.0.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.luma.filmcamera;
+PRODUCT_NAME = "$(TARGET_NAME)";
+TARGETED_DEVICE_FAMILY = 1;
+SWIFT_EMIT_LOC_STRINGS = YES;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+SUPPORTS_MACCATALYST = NO;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release; };
+00000000000000000000000B = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000190,
+000000000000000000000191,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+}; rootObject = 000000000000000000000001; }

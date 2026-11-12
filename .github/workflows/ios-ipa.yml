@@ -1,0 +1,25 @@
+name: Build LUMA iOS IPA
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios-ipa.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Build native iPhone app
+        run: bash ios/scripts/build-ipa.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LumaCamera-IPA-for-AltStore
+          path: ios/build/LumaCamera-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
