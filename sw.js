@@ -1,4 +1,4 @@
-const CACHE='luma-studio-v9';
+const CACHE='luma-studio-v10';
 const ASSETS=['./','./index.html','./style.css','./app-shell.css','./app.js','./engine.js','./film-renderer.js','./samples.js','./icon.svg','./manifest.webmanifest','./install.html','./install.css','./install.js','./assets/native-app-icon.png','./assets/mountain.jpg','./assets/portrait.jpg','./assets/portrait-natural.jpg','./assets/city.jpg','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('luma-studio-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
