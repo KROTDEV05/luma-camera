@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="LUMA"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="เปิดเว็บกล้อง LUMA แล้วถ่ายภาพได้เลย พร้อมเพิ่มไอคอนบนหน้าจอโฮม">
+<title>LUMA — เปิดแล้วถ่ายได้เลย</title>
+<link rel="icon" href="./assets/native-app-icon.png"><link rel="apple-touch-icon" href="./assets/icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./install.css">
+</head>
+<body><main>
+<nav><a href="./" aria-label="กลับหน้ากล้อง">← กลับหน้ากล้อง</a><span>YOUR POCKET STUDIO</span></nav>
+<header>
+<img class="app-icon" src="./assets/native-app-icon.png" alt="ไอคอน LUMA" width="94" height="94">
+<div class="badge">LUMA · FILM CAMERA</div>
+<h1>แค่เปิดลิงก์<br><em>ก็พร้อมเก็บความทรงจำ</em></h1>
+<p class="intro">กล้องฟิล์มบนมือถือของคุณ<br>42 โทนฟิล์ม · ดูภาพสด · ถ่ายและบันทึกรูป</p>
+</header>
+<section class="install-card" aria-labelledby="open-title">
+<div class="step-label">เปิดใช้งานบนเว็บได้ทันที</div>
+<h2 id="open-title">พร้อมแล้ว ไปถ่ายรูปกัน</h2>
+<p>เปิดหน้ากล้อง แล้วแตะ “เปิดกล้องของคุณ”<br>อนุญาตกล้องเมื่อเบราว์เซอร์ถาม</p>
+<a class="primary" href="./"><span>เปิดกล้อง LUMA</span><span aria-hidden="true">↗</span></a>
+<p class="hint">แนะนำเปิดใน Safari บน iPhone ภาพในคลังของเว็บอยู่บนอุปกรณ์นี้ ควรบันทึกรูปที่ต้องการเก็บลงเครื่อง</p>
+</section>
+<details id="setup" open>
+<summary><span><small>เปิดครั้งหน้าได้สะดวกขึ้น</small>เพิ่มไอคอนบนหน้าจอ iPhone</span><span class="plus" aria-hidden="true">+</span></summary>
+<div class="setup-body"><ol>
+<li><strong>เปิดหน้ากล้องใน Safari</strong><span>แตะปุ่ม “เปิดกล้อง LUMA” ด้านบน</span></li>
+<li><strong>แตะปุ่มแชร์ ↑</strong><span>เลือก “เพิ่มไปยังหน้าจอโฮม” (Add to Home Screen) หากไม่พบ ให้ดูในรายการเพิ่มเติม</span></li>
+<li><strong>แตะเพิ่ม</strong><span>หากมีตัวเลือก “เปิดเป็นเว็บแอป” ให้เปิดไว้ ครั้งหน้าแตะไอคอน LUMA จากหน้าจอโฮมได้เลย</span></li>
+</ol>
+<button class="secondary" id="browserInstall" type="button" hidden>เพิ่ม LUMA บนอุปกรณ์นี้</button>
+<p id="installedStatus" class="hint" hidden>คุณเปิด LUMA เป็นเว็บแอปจากหน้าจอโฮมแล้ว</p>
+<a class="secondary" href="https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/27/ios/27" target="_blank" rel="noopener noreferrer">ดูวิธีเพิ่มไอคอนจาก Apple ↗</a>
+</div></details>
+<div class="link-actions"><button id="shareInstall" type="button">แชร์ลิงก์กล้อง ↗</button></div>
+<p id="shareStatus" role="status" class="share-status"></p>
+<footer><p>เลือกโทนสี กล้องจำลอง และดูภาพตัวอย่างได้ในหน้ากล้อง<br>การใช้กล้องและบันทึกรูปขึ้นอยู่กับสิทธิ์ของเบราว์เซอร์</p></footer>
+</main><script src="./install.js" defer></script></body></html>
